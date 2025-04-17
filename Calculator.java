@@ -18,8 +18,23 @@ public class  Calculator {
     }
 
     // methode that will return the multiplication reslt of two number  
-    public double multiplication( double a , double b ){
+    public Double multiplication( double a , double b ){
         return a * b ; 
+    } 
+
+    // methode that will return the devision methode 
+    public Double division( double nomirator, double denominator){
+
+        try{
+            return nomirator / denominator ;  
+        }
+
+        catch ( ArithmeticException e ){
+            e.getMessage() ; 
+        }
+
+        return null ; 
+
     } 
 
     // main methode to teste manually the above methodes 
@@ -31,6 +46,8 @@ public class  Calculator {
         System.out.println( calculator.substraction(5.9, 9.12 ));
 
         System.out.println( calculator.multiplication(0, 2.2));
+
+        System.out.println( calculator.division(3, 0));
     }
 
 }
