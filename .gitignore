@@ -1,0 +1,28 @@
+  GNU nano 7.2                                                                           .gitignore                                                                                     
+# 🔧 Compiled class files
+*.class
+
+# 🚀 JAR / WAR files (optional)
+*.jar
+*.war
+
+# 🧪 Logs and temp files
+*.log
+*.tmp
+
+# 🌲 OS / System files
+.DS_Store
+Thumbs.db
+
+# 🛠️ IDE/editor specific folders
+.idea/
+.vscode/
+*.iml
+
+# 🔄 Build folders (if using build tools like Maven or Gradle)
+target/
+bin/
+out/
+
+# 🚫 Backup files
+*~
