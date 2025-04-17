@@ -36,7 +36,17 @@ public class  Calculator {
         return null ; 
 
     } 
+    public Double modulo( double nomirator , double denominator ){
 
+        try {
+            return nomirator % denominator ; 
+        }
+        catch ( ArithmeticException e ){
+            e.getMessage() ; 
+        }
+
+        return null ; 
+    }
     // main methode to teste manually the above methodes 
     public static void main( String args[] ){
         Calculator calculator = new Calculator() ; 
@@ -48,6 +58,10 @@ public class  Calculator {
         System.out.println( calculator.multiplication(0, 2.2));
 
         System.out.println( calculator.division(3, 0));
+
+        System.out.println( calculator.modulo(1, 1));
+       
+
     }
 
 }
