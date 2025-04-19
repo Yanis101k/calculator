@@ -49,15 +49,22 @@ public class  Calculator {
 
         return null ; 
     }
-
+    
     // methode that return a square of number
-
-
-    public Double square( double number ) {
+    public double square( double number ) {
             return Math.pow( number , 2 ) ; 
     }
 
-    
+    // methode that return squre root of number 
+    public Double squareRoot( double number ){
+        try {
+            return Math.sqrt( number ) ; 
+        }
+        catch( ArithmeticException e ){
+            e.getMessage() ; 
+            
+        }
+        
     // main methode to teste manually the above methodes 
     public static void main( String args[] ){
         Calculator calculator = new Calculator() ; 
@@ -71,6 +78,10 @@ public class  Calculator {
         System.out.println( calculator.division(3, 0));
 
         System.out.println( calculator.modulo(1, 1));
+
+        System.out.println( calculator.square(4) ) ;
+
+        System.out.println( calculator.squareRoot(-4)) ; 
        
 
     }
