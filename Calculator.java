@@ -64,6 +64,8 @@ public class  Calculator {
             e.getMessage() ; 
             
         }
+        return null ; 
+    }
         
     // main methode to teste manually the above methodes 
     public static void main( String args[] ){
