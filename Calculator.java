@@ -1,3 +1,4 @@
+import java.lang.Math ; 
 // Calculator class that will conataine methodes that implement basic calculator methodes like : + , - , * , / , % 
 
 public class  Calculator {
@@ -36,6 +37,7 @@ public class  Calculator {
         return null ; 
 
     } 
+    // methode that return reste of division 
     public Double modulo( double nomirator , double denominator ){
 
         try {
@@ -47,6 +49,15 @@ public class  Calculator {
 
         return null ; 
     }
+
+    // methode that return a square of number
+
+
+    public Double square( double number ) {
+            return Math.pow( number , 2 ) ; 
+    }
+
+    
     // main methode to teste manually the above methodes 
     public static void main( String args[] ){
         Calculator calculator = new Calculator() ; 
